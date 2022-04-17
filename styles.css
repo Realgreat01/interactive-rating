@@ -1,0 +1,148 @@
+:root{
+    font-family: "lato";
+    box-sizing: border-box;
+    --z-index: 0;
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+--Orange: hsl(25, 97%, 53%);
+}
+
+main{
+    height: 600px;
+    width:600px;
+    margin:10vh auto;
+    overflow: hidden;
+    position:relative;
+}
+
+section{
+width: 500px;
+background: var(--Very-Dark-Blue);
+height:500px;
+padding:20px;
+margin:10px;
+border-radius: 20px;
+position:absolute;
+/* overflow:hidden; */
+}
+
+h1{
+    color:var(--White);
+    font-size:xx-large;
+    font-weight: 700;
+}
+
+p{
+    color:var(--Light-Grey);
+    font-size:1.2rem;
+    width:90%;
+}
+ul{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+li{
+    color:var(--Light-Grey);
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+    background:var(--Dark-Blue);
+    padding: 10px;
+    text-align: center;
+    /* height:50px; */
+    width:40px;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+li:hover{
+    background:var(--Light-Grey);
+    color: var(--White);
+}
+
+li:active{
+    background: var(--Orange);
+}
+
+button{
+    width:80%;
+    margin:20px auto;
+    padding:15px;
+    background: var(--Orange);
+    color:var(--White);
+    font-size: 20px;
+    font-weight:bold;
+    border-radius: 2pc;
+    text-transform:uppercase;
+}
+button:hover{
+    color:var(--Orange);
+    background:var(--White);
+}
+
+
+img{
+    height:40%;
+    margin:0 20%;
+}
+.thank-you{
+    text-align: center;
+}
+
+.selected{
+    background: var(--Dark-Blue);
+    color:var(--Orange);
+    padding:10px;
+    text-align:center;
+    border-radius: 2pc;
+    font-weight:700;
+}
+.star{
+    height:20px;
+    background: var(--Dark-Blue);
+    padding:20px;
+    border-radius: 50%;
+    margin:0 ;
+}
+
+main{
+    display:flex;
+    /* margin:0 20%; */
+
+    /* padding:200px; */
+
+}
+.rating-start{
+    z-index: var(--z-index) ;
+}
+.rating-end{
+    z-index:-1;
+    /* transform:translateX(-1000%); */
+    /* transition: 2s; */
+}
+
+.back{
+    text-decoration: none;
+    padding:10px;
+    width:fit-content;
+    border-radius:50%;
+    color:var(--White);
+    /* font-size:40px; */
+    font-weight: bold;
+}
+
+#back-btn{
+    font-size:30px;
+    font-weight:900;
+}
+
+.back a{
+    text-decoration: none;
+    color:inherit;
+}
